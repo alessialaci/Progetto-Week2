@@ -1,0 +1,428 @@
+/* IMPOSTAZIONI GENERALI */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #e42424;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fakeButton {
+    background: linear-gradient(45deg, #6cc1e2, #392f7a);
+    color: white;
+    font-size: 1.9rem;
+    padding: 7px 7px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fakeButton:hover { /* Per desktop */
+    text-decoration: none; 
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+/* HEADER */
+
+#logo {
+    width: 100px;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+label {
+    text-align: end;
+}
+
+ul{
+    display: none;
+    list-style-type: none;
+}
+
+input[type=checkbox]:checked ~ ul {
+    display: block;
+}
+
+header {
+    position: sticky;
+    box-shadow: 4px 4px 4px #d3d3d3;
+    top: 0;
+    background-color: white;
+    padding: 0.8em;
+}
+
+.lni-more-alt {
+    color: #e42424;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+
+
+/* MAIN */
+
+#principale {
+    background: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 3px 3px 3px #363636;
+    padding: 35px 20px 20px 20px;
+}
+
+#principale p {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+section, .altroContainer {
+    text-align: center;
+    padding: 30px;
+}
+
+section h2, .altroContainer h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+section p, .altroContainer p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+section i, .altroContainer i {
+    margin: 0;
+}
+
+.lni-comments, .lni-map-marker, .lni-consulting, .lni-happy, .lni-cool, .lni-suspect {
+    color: #e42424;
+    font-size: xx-large;
+}
+
+#notebook {
+    margin: 10px auto;
+}
+
+#notebook img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes lampeggio {
+    0% {box-shadow: 0 0 0 rgb(151, 150, 150);}
+    20% {box-shadow: 2px 2px 10px gray;}
+    40% {box-shadow: 5px 5px 15px rgb(96, 95, 95);}
+    60% {box-shadow: 7px 7px 20px rgb(55, 54, 54);}
+    80% {box-shadow: 5px 5px 15px rgb(96, 95, 95);}
+    90% {box-shadow: 2px 2px 10px gray;}
+}
+
+.lampeggio {
+    animation-name: lampeggio;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* ARTICLE */
+
+article {
+    background-color: #0C0633;
+    color: white;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+article h2 {
+    font-size: 2.5em;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(238, 238, 238);
+    padding: 43px;
+    font-size: 1.3rem;
+}
+
+address {
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#newsletter {
+    display: flex;
+    flex-direction: column;
+}
+
+#newsletter input {
+    font-size: 1.9rem;
+    padding: 5px 7px;
+}
+
+.lni-facebook-original, .lni-linkedin-original, .lni-instagram-filled {
+    color: #e42424;
+    font-size: x-large;
+    margin: 15px 0 38px 0;
+}
+
+
+
+/* TABLE */
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#table2 {
+    border: 1px solid #c2bfbf;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+#table1 {
+    margin: 0 auto;
+}
+
+#table1 {
+    display: none;
+}
+
+th, td {
+    padding: 10px;
+    width: 30%;
+}
+
+th {
+    color: white;
+    background-color: #5F82A3;
+}
+
+#table1 tr:nth-child(odd) {
+    background-color: #D2DCE7;
+}
+
+
+
+/* FORM */
+
+#titolo {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contatti {
+    text-align: center;
+}
+
+form input, form textarea {
+    color: #aeacac;
+    font-style: italic;
+    border: 1px solid #aeacac;
+    border-radius: 5px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 450px;
+}
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    label {
+        display: none;
+    }
+    
+    ul {
+        display: flex;
+    }
+
+    li {
+
+        margin-right: 20px;
+    }
+
+    header li a {
+        color: gray;
+    }
+
+    #principale {
+        padding: 70px 150px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container div {
+        width: 30%;
+        margin: 0 20px;
+    }
+
+    .container div p {
+        text-align: start;
+    }
+
+    .article {
+        padding: 80px 20px;
+    }
+
+    .altroContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .altroContainer h2, .altroContainer p {
+        text-align: start;
+        margin-left: 30px;
+    }
+
+    .footerPart {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 40px 40px 10px 40px;
+    }
+
+    .footerPart div {
+        width: 33%;
+        margin: 0 20px;
+    }
+  
+    #newsletter {
+        width: 90%;
+    }
+
+    #bloccoFlex {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    #bloccoFlex div {
+        width: 40%;
+    }
+
+    #contatti {
+        display: flex;
+    }
+
+    form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #chiSarai {
+        width: 50%;
+    }
+
+    #table2 {
+        display: none;
+    }
+
+    #table1 {
+        display: block;
+    }
+
+    th, td {
+        padding: 20px;
+    }
+
+
+}
+
+@media screen and (min-width: 1170px) {
+
+    header {
+        font-size: 1.5rem;
+        justify-content: space-around;
+    }
+
+    #principale h1 {
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+
+    #principale p {
+        font-size: 1.5em;
+        margin-bottom: 30px;
+    }
+
+    .fakeButton {
+        padding: 15px 15px;
+    }
+
+    footer {
+        font-size: 2rem;
+        padding: 50px 50px 20px 50px;
+    }
+}
